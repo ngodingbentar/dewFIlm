@@ -21,15 +21,20 @@ class SearchBar extends HTMLElement {
 
     render() {
         this.shadowDOM.innerHTML = `
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-       
-        <div id="search-container" class="search-container container">
-            <div class="row mt-3 justify-content-center">   
+       <div id="search-container" class="search-container">
+           <input placeholder="Search football club" id="searchElement" type="search">
+           <button id="searchButtonElement" type="submit">Search</button>
+       </div>
+
+       <div class="container search-container" id="search-container">
+            <div class="row mt-3 justify-content-center">    
                 <div class="col-md-8">
                     <h1 class="text-center h1a">Pencarian Film</h1>
                     <div class="input-group mb-3">
-                        <input class="form-control" placeholder="Search football club" id="searchElement" type="search">
-                        <button class="btn btn-dark" id="searchButtonElement" type="submit">Search</button>
+                        <input type="text" class="form-control" placeholder="Tulis Judul Film" id="searchElement input-cari">
+                        <div class="input-group-append">
+                            <button class="btn btn-dark" type="button" id="searchButtonElement klik-cari">Cari</button>
+                        </div>
                     </div>
                 </div>
             </div>

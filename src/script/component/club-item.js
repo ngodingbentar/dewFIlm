@@ -12,50 +12,23 @@ class ClubItem extends HTMLElement {
 
     render() {
         this.shadowDOM.innerHTML = `
-           <style>
-              * {
-                   margin: 0;
-                   padding: 0;
-                   box-sizing: border-box;
-               }
-               :host {
-                   display: block;
-                   margin-bottom: 18px;
-                   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-                   border-radius: 10px;
-                   overflow: hidden;
-               }
-              
-               .fan-art-club {
-                   width: 100%;
-                   max-height: 300px;
-                   object-fit: cover;
-                   object-position: center;
-               }
-              
-               .club-info {
-                   padding: 24px;
-               }
-              
-               .club-info > h2 {
-                   font-weight: lighter;
-               }
-              
-               .club-info > p {
-                   margin-top: 10px;
-                   overflow: hidden;
-                   text-overflow: ellipsis;
-                   display: -webkit-box;
-                   -webkit-box-orient: vertical;
-                   -webkit-line-clamp: 10; /* number of lines to show */
-               }
-
-           </style>
-           <img class="fan-art-club" src="${this._club.fanArt}" alt="Fan Art">
-           <div class="club-info">
-               <h2>${this._club.name}</h2>
-               <p>${this._club.description}</p>
-           </div>`;
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+        
+        
+        <div class="col-sm-3">
+            <div class="card text-white bg-secondary mb-3">
+                <img src="${this._club.Poster}" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">${this._club.Title}</h5>
+                <h6 class="card-subtitle mb-2 text-muted">${this._club.Year}</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <button type="button" class="btn btn-primary see-detail btn-hover" data-toggle="modal" data-target="#exampleModalScrollable" data-id="${this._club.Type}">Selengkapnya</button>
+                </div>
+            </div>
+        </div>
+        
+        `;
     }
 }
 
