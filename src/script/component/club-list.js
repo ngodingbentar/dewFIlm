@@ -93,7 +93,7 @@ class ClubList extends HTMLElement {
         this.shadowDOM.innerHTML = "";
         this._clubs.forEach(club => {
             const clubItemElement = document.createElement("club-item");
-            clubItemElement.style = ('background-color:grey;padding:9px;margin:6px;align-content: center;'); 
+            clubItemElement.style = ('background-color:grey;padding:9px;margin:6px;align-content: center;max-width:300px;'); 
             clubItemElement.club = club;
             this.shadowDOM.appendChild(clubItemElement);
         })

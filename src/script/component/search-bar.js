@@ -28,7 +28,7 @@ class SearchBar extends HTMLElement {
                 <div class="col-md-8">
                     <h1 class="text-center h1a">Pencarian Film</h1>
                     <div class="input-group mb-3">
-                        <input class="form-control" placeholder="Search football club" id="searchElement" type="search">
+                        <input class="form-control" placeholder="Cari Judul Film" id="searchElement" type="search">
                         <button class="btn btn-dark" id="searchButtonElement" type="submit">Search</button>
                     </div>
                 </div>
