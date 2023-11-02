@@ -74,7 +74,7 @@ class AppBar extends HTMLElement {
           }
         </style>
         <div class="topnav">
-        <a href="http://www.omdbapi.com/?apikey=2567cbc3&s=naruto" class="">Naruto</a>
+        <a href="http://www.omdbapi.com/?apikey=2567cbc3&s=naruto" class="">Ngodingbentar</a>
             <div class="topnav-centered">
             <a href="index.html" class="active">dewFilm</a>
             </div>
